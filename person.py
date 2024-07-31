@@ -45,7 +45,6 @@ class AdminHandler(User):
     def add_user(self, username, password, initial_bool):
         new_user = User(username, password, initial_bool)
         self.users_list.append(new_user)
-        print("New user added successfully.")
 
     def find_by_email(self, email):
         for user in self.users_list:
